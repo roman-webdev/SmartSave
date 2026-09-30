@@ -1,0 +1,41 @@
+# Secrets / configuration
+.env
+.env.*
+*.env
+*.pem
+*.key
+credentials*
+secrets*
+# Financial data
+*.db
+*.db-*
+*.sqlite*
+*.lock
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.jsonl
+# Runtime / private artifacts
+logs/
+backups/
+exports/
+.demo/
+private/
+production/
+*.log
+*.zip
+*.7z
+*.tar
+*.gz
+# Documentation-only showcase: no application source
+*.py
+*.pyc
+__pycache__/
+venv/
+.venv/
+# Local tooling / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
