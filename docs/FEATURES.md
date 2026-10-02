@@ -1,6 +1,6 @@
 # Features and scope
 
-Capabilities below are supported by inspected handlers, domain modules, UX routes, and product documentation. Implementation evidence does not imply a verified public deployment.
+SmartSave Beta 1.3.14 is a Release Candidate / Beta Deployment with a multilingual UA / EN / RU interface. The table summarizes user-facing capabilities; it does not establish production readiness.
 
 | Feature | User-facing behavior | Scope / limitation |
 | --- | --- | --- |
@@ -25,8 +25,10 @@ Upload a supported statement, inspect its normalized preview, review categories,
 
 No sample statements, fingerprint formulas, private scoring rules, or business-policy details are published.
 
-## Evidence basis
+## Release verification and scope
 
-The review used product/CSV documentation, architecture notes, declared dependencies, Telegram command handlers, planning functions, analytics components, and UX routes. Local audit/verification notes qualify readiness claims. Source archives were inventoried without extraction into this showcase.
+The supplied Beta 1.3.14 release verification reports **454 automated tests passed, 0 skipped**, covering offline verification and normal, reverse, and randomized test-order runs. Deployment package structure validation passed.
 
-No bot was started, no financial database was opened, and no tests were rerun for this documentation task. Earlier test results are not presented as fresh verification.
+Linux / Oracle Linux is the controlled beta deployment context. **Native Oracle Linux regression, Telegram live acceptance, and journal/service verification remain pending before production readiness.**
+
+No bot was started, no financial database was opened, and no tests were rerun for this public documentation update. Private source, internal reports, and deployment instructions remain excluded.

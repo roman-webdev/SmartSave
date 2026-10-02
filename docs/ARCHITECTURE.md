@@ -39,4 +39,4 @@ Credentials, actual databases, exports, operational paths, deployment configurat
 
 ## Deployment scope
 
-One Python process, SQLite, and Linux/systemd packaging are documented. This repository contains no deployable application or private installation configuration. Multi-node operation, live deployment, and real payment verification are outside the demonstrated scope.
+SmartSave Beta 1.3.14 is a Release Candidate / Beta Deployment for controlled Linux beta testing on Oracle Linux. At a high level, it uses a Python application and SQLite persistence. This repository contains no deployable application or private installation configuration. Native Oracle Linux regression, Telegram live acceptance, and journal/service verification remain pending before production readiness. Multi-node operation and real payment verification are not demonstrated.

@@ -1,6 +1,6 @@
 # SmartSave
 
-**A Telegram personal finance assistant for tracking money, planning ahead, and understanding spending patterns.**
+**SmartSave Beta 1.3.14 — Release Candidate / Beta Deployment**
 
 SmartSave brings income and expense tracking, budgets, savings goals, CSV statement imports, and financial analysis into a private Telegram conversation. Guided entry and text-based input make everyday bookkeeping available without a separate dashboard.
 
@@ -53,7 +53,7 @@ Real payments, revenue, paid conversion, and a launched commercial service are n
 - **zoneinfo / tzdata** — timezone support.
 - **JSON locale catalogs** — English, Ukrainian, Russian UI.
 - **unittest** — private offline regression suite.
-- **Linux / systemd** — documented deployment packaging.
+- **Linux / Oracle Linux** — controlled beta deployment.
 
 ## Architecture
 
@@ -65,16 +65,29 @@ See [High-level architecture](docs/ARCHITECTURE.md).
 
 No screenshots or public demo media are included. No image assets were found in the inspected project folders or source archive inventories. Future captures should use an isolated synthetic demo and pass privacy review. See [Asset guidelines](assets/README.md). No fabricated images are used.
 
+## Release and quality assurance
+
+- **Current status:** Beta 1.3.14 — Release Candidate / Beta Deployment.
+- **Automated regression:** 454 automated tests passed, 0 skipped.
+- Offline verification and normal, reverse, and randomized test-order runs passed.
+- Deployment package structure validation passed.
+- **Deployment context:** remote Linux beta deployment on Oracle Linux.
+- **Multilingual UI:** UA / EN / RU (Ukrainian / English / Russian).
+
+These results summarize the supplied Beta 1.3.14 release verification; tests were not rerun as part of this public documentation update.
+
+**Pending before production readiness:** native Oracle Linux regression, Telegram live acceptance, and journal/service verification. This release remains a release candidate.
+
 ## Status and limitations
 
-SmartSave is a pre-revenue technical product with a documented beta/demo workflow. This showcase is based on read-only inspection of source, documentation, and local verification notes; it is not a new runtime verification.
+SmartSave is a pre-revenue technical product at the release-candidate stage for controlled beta deployment. This repository remains a documentation-only showcase; the private application and deployment package are not included.
 
 - Single-process SQLite architecture; distributed operation and high-scale performance are not demonstrated.
 - CSV supports defined formats and UAH amounts, without live bank synchronization or currency conversion.
 - Duplicate protection applies to CSV imports and has documented edge cases.
 - Reports and forecasts depend on the completeness of recorded data.
-- Live Telegram behavior, Linux deployment, and real Stars payments are not verified here.
-- Existing notes include an environment-blocked test rerun; no fresh passing-test count is claimed.
+- Native Oracle Linux regression, Telegram live acceptance, and journal/service verification remain pending; real Stars payments are not verified here.
+- Automated results above apply to Beta 1.3.14 and do not establish production readiness.
 
 ## Repository contents
 
